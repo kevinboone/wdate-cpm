@@ -1,0 +1,34 @@
+wdate - Get or set the real-time clock on a CP/M system with ROMWBW firmware
+============================================================================
+
+Usage
+-----
+
+wdate
+With no arguments, displays the current date and time
+
+wdate hr min
+With two arguments, sets the time in hours and minutes, without changing date
+or seconds
+
+wdate hr min sec
+With three arguments, sets the time in hours, minutes, and seconds, without
+changing date
+
+wdate year month day hr min sec
+With six arguments, sets date and time. All numbers are one or two digits.  The
+two-digit year starts at 2000. 
+
+Notes
+-----
+
+wdate does some error checking on the input values, but it is not exhaustive.
+
+wdate should work with any RTC board that is supported by ROMWBW, including
+the interrupt-driven timer that some systems have.
+
+Author
+------
+wdate is maintained by Kevin Boone, and is distributed under the terms of the
+GNU public licence, v3.0.
+
